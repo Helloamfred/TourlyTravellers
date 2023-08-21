@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Travel the world Login form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="wrapper">
+      <div class="signup form">
+        <header>Signup</header>
+        <form action="#" class="sign_up">
+          <div class="show_alert">
+            <p id="create-success" style="color: rgb(66, 132, 246)"></p>
+            <p id="create-error" style="color: red"></p>
+          </div>
+
+          <input type="text" placeholder="full_name" required id="full_name" />
+          <input type="emailInput" placeholder="email " required id="email" />
+          <input
+            type="passwordInput"
+            placeholder="password"
+            required
+            id="password"
+          />
+          <div class="checkbox">
+            <input type="checkbox" id="signupCheck" />
+            <label for="signupCheck">I accept all terms & conditions</label>
+          </div>
+          <input type="submit" value="Signup" />
+        </form>
+      </div>
+
+      <div class="form login">
+        <div class="login_show_alert">
+          <p id="login_success" style="color: rgb(23, 26, 219)"></p>
+          <p id="login_error" style="color: red"></p>
+        </div>
+        <header>Login</header>
+
+        <form action="#" class="sign_in">
+          <input type="text" placeholder="Email " required id="login_email" />
+          <input
+            type="password"
+            placeholder="Password"
+            required
+            id="login_password"
+          />
+          <!-- <a href="#">Forgot password?</a> -->
+          <button id="mybtn" type="submit" onsubmit="return(checkform())">
+            Login
+          </button>
+        </form>
+      </div>
+    </section>
+    <script src="login.js" defer></script>
+  </body>
+</html>

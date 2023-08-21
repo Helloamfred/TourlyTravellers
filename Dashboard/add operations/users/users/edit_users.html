@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>registration form</title>
+    <link
+      rel="stylesheet"
+      href="/Dashboard/add operations/users/users/add_user.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="form">
+      <div class="container">
+        <button
+          type="button"
+          class="close-btn fas fa-times"
+          id="close"
+          aria-label="Close"
+          onclick="myFunction()"
+        ></button>
+        <div class="text">Edit User</div>
+
+        <form id="myform">
+          <div class="full_name">
+            <label>full_name</label>
+            <input type="text" id="full_name" required />
+          </div>
+
+          <div class="email">
+            <label>email</label>
+            <input type="text" id="email" required />
+          </div>
+          <div class="password">
+            <label>password</label>
+            <input type="text" id="password" required />
+          </div>
+          <div>
+            <!-- <button id="mybtn" class="mybtn" type="submit">submit</button> -->
+            <input type="submit" id="mybtn" value="Submit" />
+          </div>
+
+          <div class="show_alert">
+            <p id="create-success" style="color: rgb(66, 132, 246)"></p>
+            <p id="create-error" style="color: red"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/Dashboard/add operations/users/users/edit_user.js"></script>
+  </body>
+</html>

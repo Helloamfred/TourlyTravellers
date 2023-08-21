@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>travel the world</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="index/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="#" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires <br> contact us on:</p>
+
+            <p class="helpline-number">+254 788900100</p>
+          </div>
+
+        </a>
+
+      
+
+        <div class="header-btn-group">
+
+         
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li>
+              <a href="Destination/destination.html"class="navbar-link" data-nav-link>destination</a>
+            </li>
+
+            <li>
+              <a href="packages/packages.html" class="navbar-link" data-nav-link>packages</a>
+            </li>
+
+            <li>
+              <a href="gallery/Gallery.html" class="navbar-link" data-nav-link>gallery</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+
+            <li>
+              <a href="#learn-more" class="navbar-link" data-nav-link>Learn More</a>
+            </li>
+
+            <li>
+              <a href="#tour-search" class="navbar-link" data-nav-link>Book Now</a>
+            </li>    
+
+        </nav>
+
+        <div>
+          <button id="mybtn" class="btn btn-primary">Login</button>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+
+      <section class="hero"  id="home">
+        <div class="container">
+
+          <h2 class="h1 hero-title">Journey to explore the world</h2>
+
+          <p class="hero-text">
+            The world is a book, and those who don’t travel read only a page and you will not be the
+            same having seen the moon shine on the other side of the world..
+          </p>
+
+          
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TOUR SEARCH
+      -->
+ 
+      <section  id="tour-search"  class="tour-search">
+        <div class="container">
+
+          <div class="show_alert">
+            <p id="create-success" style="color: rgb(242, 244, 247)"></p>
+            <p id="create-error" style="color: red"></p>
+          </div>
+          <form action="" id="myform" class="tour-search-form">
+
+            <div class="input-destination">
+              <label for="destination" class="input-label"> Destination*</label>
+              <select name="destination" id="destination-options"  class="input-field" required>
+                <option value="" >Select Destination</option>
+
+              </select>
+
+            </div>
+
+            <div class="input-location">
+              <label for="location" class="input-label"> location*</label>
+              <select name="location" id="location-options"  class="input-field" required>
+                <option value="" >Select location</option>
+              </select>
+            </div>
+
+            <div class="input-packages">
+              <label for="checkout" class="input-label">package</label>
+              <select name="package" id="package-options"  class="input-field" required>
+                <option value="" >Select package</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="people" class="input-label">Travellers*</label>
+              <input type="number" name="people" id="people" required  placeholder="No.of People" class="input-field" min="1">
+            </div>
+
+          
+            <div class="input-prices">
+              <label for="checkout" class="input-label">price*</label>
+              <input name="price" id="price-options" class="input-field" type="text" disabled />
+              
+            </div>
+           
+
+          
+
+            <button type="submit"  id="requestbtn" class="btn btn-secondary">Book now</button>
+
+          </form>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="popular" id="destination">
+        <div class="container">
+
+          <p class="section-subtitle">Uncover places</p>
+
+          <h2 class="h2 section-title">Popular destination</h2>
+
+          <p class="section-text">
+            “We travel not to escape life, but for life not to escape us.”<br>
+            I haven’t been everywhere, but this is on my list
+          </p>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="assets\images\italy 1.jpeg" alt="" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Italy</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">The Colosseum</a>
+                  </h3>
+
+                  <p class="card-text">
+                    It is the largest ancient amphitheatre ever built,
+                    and is still the largest standing amphitheatre in the world, despite its age.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="assets/images/desert 2.jpeg" alt="" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Dubai</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Dubai Desert</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Travel the World agency is an award-winning tour company
+                    that provides desert safari, city, and cruise tours
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="assets/images/japan 1.jpeg" alt="Kyoto temple, japan" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Japan</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Kyoto temple</a>
+                  </h3>
+
+                  <p class="card-text">
+                    It is home to numerous Buddhist temples, Shinto shrines, palaces and gardens
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="assets/images/profile 2.jpeg" alt="" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Kenya</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Maasai Mara</a>
+                  </h3>
+
+                  <p class="card-text">
+                    It is home to numerous wild animals
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          <div>
+
+
+            <button id="destination-btn" class="btn btn-primary">Load <br>More destintion</button>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PACKAGE
+      -->
+
+      <section class="package" id="package">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Packages</p>
+
+          <h2 class="h2 section-title">Checkout Our Packages</h2>
+
+          <p class="section-text">
+            The main types of travel packages can be categorized into adventure, romance, spa,
+            business and attraction-based. All travel packages include some kind of transportation and accommodation,
+            but some of these deals have other amenities included such as meals and activities.
+
+          <ul class="package-list">
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="assets/images/Superb Seychelles – Where to Stay in the Beach Paradise.jpeg"
+                    alt="Experience The Great Holiday On Beach" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Romance experience On Beach</h3>
+
+                  <p class="card-text">
+                    Romance-based travel includes couple's packages for honeymoons and anniversaries.
+                    These types of packages usually have many extras, such as roses and chocolates plus a romantic
+                    dinner or
+                    a couple's massage, included in the price. Some hotels have bridal suites which are included as
+                    accommodation
+                    in the package price.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">5D/4N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">max: 6</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Zanzibar</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(50 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    $750
+                    <span>/ per couple</span>
+                  </p>
+
+                
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="assets/images/work1.jpeg" alt="" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Business trip to the bahamas</h3>
+
+                  <p class="card-text">
+                    accommodation near city centers a rental car
+                    as well as a complimentary breakfast. Hotel accommodation
+                    that includes access to a conference room. Extras may include daily newspaper delivery to the
+                    business traveler's room.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">5D/4N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">bahamas</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(20 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    $400
+                    <span>/ per person</span>
+                  </p>
+
+                
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="assets/images/disney1.jpeg" alt="" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">family Vacation Disney World</h3>
+
+                  <p class="card-text">
+                    The package includes accommodation, airport shuttle, a rental car and theme park admission
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7D/6N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Disney Land</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(40 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    $460
+                    <span>/ per person</span>
+                  </p>
+
+                
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button id="packages-btn" class="btn btn-primary">View All Packages</button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle">Photo Gallery</p>
+
+          <h2 class="h2 section-title">Photo's From Travellers</h2>
+
+          <p class="section-text">
+            Here are some of the photos taken from some of our customers
+            on the trips from various packages and destinations around the world.
+          </p>
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="assets/images/disney2.jpeg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="assets/images/dudai2.jpeg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="assets/images/bahamas2.jpeg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="assets/images/Japan 2.jpeg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="assets/images/masaai 1.png" alt="Gallery image">
+              </figure>
+            </li>
+
+          </ul>
+
+
+        </div>
+      </section>
+
+
+
+
+     
+
+<!-- --------------about us------------- -->
+      <section class="cta" id="learn-more">
+        <div class="container">
+
+          <div class="cta-content">
+            <p class="section-subtitle">Call To Action</p>
+            <h2 class="h2 section-title">Ready For Unforgatable Travel<br>
+               Remember Us For a Memorable Trip</h2>
+            <p class="section-text">
+              As with any journey, who you travel with is more important than the destination.
+            </p>
+          </div>
+
+          <div class="cta-content">      
+            <h2 class="h2 section-title"> Our Story</h2>
+            <p class="section-text">
+             
+              Travel The Wolrd was founded in 2002, and we have accomplished so much over the years. To create a world whereone can travel around the world has always been our goal.
+              
+              Our Founder and CEO Fredrick Tt was inspired to start this company by the beauty of each country.
+              
+              At Travel The Wolrd, we encourage our community to stay positive and enjoy what the world has to offer.
+
+              Travel The Wolrd is an organisation that is dedicated to providing a safe and secure environment for travellers.
+                          </p>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+ <!-------------------- contact------------- -->
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container"id="contact">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src=".assets/images/logo.svg" alt="logo">
+          </a>
+
+          <p class="footer-text">
+            Happiness is a by-product of an effort to make someone else happy
+            and have a lovely day
+
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us on !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+254 7 88900100</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:traveltheworld.com" class="contact-link">info.traveltheworld.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>3146 Nairobi, Kenya</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Subscribe our newsletter for more update & news !!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Riara+(My%20World)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>  </footer>
+
+
+
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="">codewithUS</a>. All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Term & Condition</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">FAQ</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index/script.js"></script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

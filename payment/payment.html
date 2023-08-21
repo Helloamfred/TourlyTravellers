@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment</title>
+    <link rel="stylesheet" href="/payment/payment.css" />
+    <!--Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://www.paypal.com/sdk/js?client-id=ATYYB0XzkXeJKlwKlIGfUXnYSJU9GniTgh4BOoOjvsACHDdQji7iJ7Ul3PrmENPARY8GZJGAYcFPh4qb&currency=USD"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h4>Select a <span style="color: #6064b6">Payment</span> method</h4>
+      </div>
+      <div class="show_alert">
+        <p id="create-success" style="color: rgb(11, 98, 229)"></p>
+        <p id="create-error" style="color: red"></p>
+      </div>
+      <form action="#">
+        <input
+          type="button"
+          onclick="visaFunction()"
+          name="payment"
+          id="visa"
+        />
+        <input
+          type="button"
+          onclick="mastercardFunction()"
+          name="payment"
+          id="mastercard"
+        />
+
+        <input
+          type="button"
+          onclick="mpesaFunction()"
+          name="payment"
+          id="mpesa"
+        />
+
+        <div class="category">
+          <label for="visa" class="visaMethod">
+            <div class="imgName">
+              <div class="imgContainer visa">
+                <img src="https://i.ibb.co/vjQCN4y/Visa-Card.png" alt="" />
+              </div>
+              <span class="name">VISA</span>
+            </div>
+          </label>
+
+          <label for="mastercard" class="mastercardMethod">
+            <div class="imgName">
+              <div class="imgContainer mastercard">
+                <img src="https://i.ibb.co/vdbBkgT/mastercard.jpg" alt="" />
+              </div>
+              <span class="name">Mastercard</span>
+            </div>
+          </label>
+
+          <label for="paypal" class="paypalMethod">
+            <div class="imgName">
+              <div id="paypal-button-container"></div>
+            </div>
+          
+          </label>
+
+            <label for="mpesa" class="mpesaMethod">
+            
+              <div class="imgName">
+                <div class="imgContainer mpesa">
+                  <button class="open-button"                 
+                    onclick="openForm()"><img
+                    src="/assets/images/Mpesa_Withdrawal_Charges_2022_Latest_Update-removebg-preview.png"
+                    alt=""/>
+                  </button>
+                </div>
+              </div>          
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </form>
+      <div class="form-popup" id="myForm" >
+        <form   class="form-container"  >
+          <h1>Mpesa</h1>
+
+          <label for="Phone"><b>Phone</b></label>
+          <input type="text" id="phonenumber" placeholder="Enter Number" name="Phone" maxlength="10" minlength="10" required>
+
+          <label for="Amount"><b>Amount</b></label>
+          <input type="text" id="totalamount"  placeholder="Total Amount" name="Amount"  >
+
+          <button type="submit" id="payBtn"  onclick="mpesaTransaction()" class="btn">Pay</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/payment/payment.js"></script>
+  </body>
+</html>
